@@ -42,17 +42,17 @@ const callsToAction = [
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="bg-[#013B94]">
+    <header className="bg-[#1bd9c4]">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div>
           <Link href="/">
-            <span className="sr-only">Booking.com</span>
+            <span className="sr-only">WillowTree Onsite Planner</span>
             <img
               className="h-12 w-auto"
-              src="https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"
+              src="https://assets-global.website-files.com/61082de7b224bba038edad53/63b4c75b939f2b15f1598f3f_telus-and-wt-horizontal-lockup-dark.svg"
               alt=""
             />
           </Link>
@@ -60,7 +60,7 @@ function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-3 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -68,9 +68,9 @@ function Header() {
           </button>
         </div>
 
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="hidden lg:flex lg:gap-x-12 px-2">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-[#0e4252]">
               Stays
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-white"
@@ -96,7 +96,7 @@ function Header() {
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-200">
                         <item.icon
-                          className="h-6 w-6 text-[#013B94] group-hover:text-blue-600"
+                          className="h-6 w-6 text-[#1c77c3] group-hover:text-blue-600"
                           aria-hidden="true"
                         />
                       </div>
@@ -104,12 +104,12 @@ function Header() {
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-[#013B94]"
+                          className="block font-semibold text-[#4a5864]"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-[#013B94]">
+                        <p className="mt-1 text-[#1c77c3]">
                           {item.description}
                         </p>
                       </div>
@@ -122,10 +122,10 @@ function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#013B94] hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#1c77c3] hover:bg-gray-100"
                     >
                       <item.icon
-                        className="h-5 w-5 flex-none text-[#013B94]"
+                        className="h-5 w-5 flex-none text-[#1c77c3]"
                         aria-hidden="true"
                       />
                       {item.name}
@@ -135,21 +135,21 @@ function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#" className="text-sm font-semibold leading-6 text-[#0e4252]">
             Flights
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#" className="text-sm font-semibold leading-6 text-[#0e4252]">
             Car Rentals
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#" className="text-sm font-semibold leading-6 text-[#0e4252]">
             Attractions
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#" className="text-sm font-semibold leading-6 text-[#0e4252]">
             Flight + Hotel
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#" className="text-sm font-semibold leading-6 text-[#0e4252]">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -163,19 +163,19 @@ function Header() {
       >
         <div className="fixed inset-0 z-10" />
 
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#013B94] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Booking.com</span>
+              <span className="sr-only">WillowTree Travel</span>
               <img
                 className="h-8 w-auto"
-                src="https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"
+                src="https://assets-global.website-files.com/61082de7b224bba038edad53/63b4c75b939f2b15f1598f3f_telus-and-wt-horizontal-lockup-dark.svg"
                 alt=""
               />
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-white"
+              className="-m-2.5 rounded-md p-2.5 text-[#0e4252]"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -188,7 +188,7 @@ function Header() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-blue-800">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-[#0e4252] hover:bg-blue-800 px-3">
                         Stays
                         <ChevronDownIcon
                           className={cn(
@@ -204,7 +204,7 @@ function Header() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-blue-800"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-[#0e4252] hover:bg-blue-800"
                           >
                             {item.name}
                           </Disclosure.Button>
